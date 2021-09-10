@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: `https://dygames.github.io/`,
     social: {
       instagram: `dygames37`,
-      twitter: ``,
     },
   },
   plugins: [
@@ -110,6 +109,7 @@ module.exports = {
                     frontmatter {
                       title
                       date
+                      category
                     }
                     html
                   }

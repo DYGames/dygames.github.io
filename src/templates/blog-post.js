@@ -6,6 +6,7 @@ import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
+import Comments from '../components/Comments'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -29,6 +30,7 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div style={{fontFamily: '\'IBM Plex Sans KR\', sans-serif'}}><MDXRenderer>{post.body}</MDXRenderer></div>
+        <Comments repo="DYGames/dygames.github.io-comments" theme="github-light" />
         <hr
           style={{
             marginBottom: rhythm(1),

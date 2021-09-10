@@ -14,7 +14,7 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              marginBottom: rhythm(0.5),
             }}
           >
             <Image
@@ -23,16 +23,16 @@ function Bio() {
               style={{
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
-                width: '50px',
-                height: '50px',
+                width: '100px',
+                height: '100px',
                 objectFit: 'cover',
                 borderRadius: `100%`,
               }}
             />
             <p style={{fontFamily: '\'IBM Plex Sans KR\', sans-serif'}}>
-              음악과 운동을 좋아합니다.<br/>서비스를 설계하고 구현하는데 관심이 많습니다.
-              {' '}
-              <a href={`https://instagram.com/${social.twitter}`}>🎃</a>
+              이 글을 작성한 <b>{author}</b>은...<br/>음악과 운동을 좋아합니다.<br/>서비스를 설계하고 구현하는데 관심이 많습니다.<br/>
+              <a style={{ boxShadow: "0 0 0 0" }} href={`https://instagram.com/${social.instagram}`}>🎃</a>
+              <a style={{ boxShadow: "0 0 0 0" }} href={`https://www.youtube.com/channel/UC-qJ9aVGyR909i67bf_0jAQ`}>🎸</a>
             </p>
           </div>
         )
@@ -54,7 +54,7 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
-          twitter
+          instagram
         }
       }
     }

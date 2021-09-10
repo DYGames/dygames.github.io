@@ -11,7 +11,8 @@ class BlogIndex extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMdx.edges
-
+    const categories = posts.map(post => post.node.frontmatter.category)
+    
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -19,6 +20,39 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
+        <hr
+          style={{
+            marginBottom: rhythm(1),
+          }}
+        />
+        <h3 style={{ margin: "0px" }}>Category</h3><br/>
+        <ul style={{ listStyle: "none" }}>
+          {categories.filter((item, index) => categories.indexOf(item) === index).map(( category ) => {
+            console.log(category)
+              return (<li key={category} style={{ display: "inline-block", margin: "0 10px 0 10px"}}>
+                <Link style={{ boxShadow: "0 0 0 0" }} to={`/categories/${category}/`}>
+                  <div style={{ backgroundColor: "rgba(241, 243, 244, 1)", 
+                                border: "0px solid black", 
+                                color: "black",
+                                fontFamily: "Montserrat,Georgia,sans-serif",
+                                borderRadius: "500px",
+                                fontSize: "inherit",
+                                height: "40px",
+                                lineHeight: "40px",
+                                outline: "none",
+                                position: "relative",
+                                textAlign: "center",
+                                width: "100px"}}>
+                <b>{category}</b></div>
+                </Link>
+              </li>
+            )})}
+        </ul>
+        <hr
+          style={{
+            marginBottom: rhythm(1),
+          }}
+        />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -61,6 +95,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            category
           }
         }
       }
