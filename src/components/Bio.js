@@ -27,6 +27,7 @@ function Bio() {
                 height: '100px',
                 objectFit: 'cover',
                 borderRadius: `100%`,
+                flexShrink: 0
               }}
             />
             <p style={{fontFamily: '\'IBM Plex Sans KR\', sans-serif'}}>

@@ -26,7 +26,7 @@ class BlogIndex extends React.Component {
           }}
         />
         <h3 style={{ margin: "0px" }}>Category</h3><br/>
-        <ul style={{ listStyle: "none" }}>
+        <ul style={{ listStyle: "none", marginLeft: "0" }}>
           {categories.filter((item, index) => categories.indexOf(item) === index).map(( category ) => {
             console.log(category)
               return (<li key={category} style={{ display: "inline-block", margin: "0 10px 0 10px"}}>
