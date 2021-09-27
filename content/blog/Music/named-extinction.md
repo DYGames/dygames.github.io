@@ -85,5 +85,7 @@ import Youtube from "../../../src/components/Youtube.js"
 <hr/>
 
 내가 너무나 사랑하는 밴드의 앨범 5개였다.
+
 조용하고 어두운 방에서 맞은 편의 가로등을 바라보며 "Doolittle"을 반복 재생하던 때가 떠오른다.
+
 나도 이런 아름답고 파격적인 음악을 만들 수 있을까?
