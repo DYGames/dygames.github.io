@@ -1,7 +1,7 @@
 ---
 title: Unity Animation Clip root contains root motion curves
 date: 2021-10-15 01:10:08
-category: unity
+category: Unity
 thumbnail: { thumbnailSrc }
 draft: false
 ---

@@ -13,7 +13,7 @@ export default class BlogCategory extends React.Component {
         return (
             <Layout location={this.props.location} title={siteTitle}>
               <h1>{this.props.pageContext.category}</h1>
-              {posts.filter((item, idx) => item.node.frontmatter.category == this.props.pageContext.category).map(({ node }) => {
+              {posts.filter((item, idx) => item.node.frontmatter.category.toLowerCase() == this.props.pageContext.category.toLowerCase()).map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
                   <div key={node.fields.slug}>
