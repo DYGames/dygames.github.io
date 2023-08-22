@@ -1,0 +1,22 @@
+function init() {
+    initArticleList()
+}
+
+function initArticleList() {
+    var path = '../articles/'
+    fetch(path + 'articles.txt')
+        .then(function (response) {
+            return response.text()
+        })
+        .then(function (txt) {
+            txt.split("\n").forEach((element, index) => {
+                let column =
+                    `<td><a href="${"/article.html?article=" + element}">${element}</a></td>`
+                let tr = document.createElement('tr')
+                tr.innerHTML = column
+                document.querySelector("#h2 > table").append(tr)
+            });
+        });
+}
+
+window.onload = init

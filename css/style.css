@@ -1,0 +1,49 @@
+.content {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.poster {
+    width: 150px;
+    height: 200px;
+}
+
+.cover {
+    width: 150px;
+    height: 150px;
+}
+
+.form-control {
+    width: 15%;
+}
+
+#h1 {
+    display: inline-block;
+    width: max-content;
+}
+
+#h2 {
+    display: inline-block;
+    width: 70%;
+}
+
+tr th:nth-child(1),
+tr th:last-child {
+    width: 1%;
+    white-space: nowrap;
+}
+
+tr th:nth-child(3) {
+    width: 150px;
+}
+
+#guestbook-div {
+    margin-top: 15px;
+}
+
+#name {
+    width: 70%;
+}
