@@ -30,14 +30,18 @@
     width: 70%;
 }
 
-tr th:nth-child(1),
-tr th:last-child {
-    width: 1%;
-    white-space: nowrap;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-tr th:nth-child(3) {
-    width: 150px;
+td {
+    height: 50px;
+    border-top: solid 1px #dee2e6;
+}
+
+td:hover {
+    font-weight: bold;
 }
 
 #guestbook-div {
