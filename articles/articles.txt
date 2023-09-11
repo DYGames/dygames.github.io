@@ -11,5 +11,4 @@ Kotlin Functional Interface (SAM).md
 Kotlin Closure.md
 MockK을 이용한 Presenter 테스트.md
 CompletableFuture를 이용한 비동기 처리 전략.md
-RoomPager 양방향 리사이클링 페이저 뷰.md
-Android Log.md
+Android에서 4방향 재활용 가능한 페이징 뷰 만들기 + Youtube WebView 재생.md
