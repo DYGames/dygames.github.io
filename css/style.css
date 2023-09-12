@@ -1,9 +1,37 @@
-.content {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
+.card {
+    width: 300px;
+}
+
+#navbar-example2 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+#navbar-content {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #navbar-content {
+        width: 900px
+    }
+}
+
+.content-parent {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    max-width: 900px;
+    margin-bottom: 40px;
 }
 
 .poster {
@@ -27,7 +55,6 @@
 
 #h2 {
     display: inline-block;
-    width: 70%;
 }
 
 a {
