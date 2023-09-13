@@ -1,5 +1,8 @@
 .card {
+    margin-left: auto;
     width: 300px;
+    height: 350px;
+    margin-bottom: 50px;
 }
 
 #navbar-example2 {
@@ -8,30 +11,43 @@
 }
 
 #navbar-content {
+    margin-left: 20px;
+    margin-right: 20px;
     width: 900px;
     display: flex;
     justify-content: space-between;
 }
 
-@media screen and (max-width: 900px) {
-    .content {
+@media screen and (max-width: 1600px) {
+    #content-parent {
         display: flex;
         flex-direction: column-reverse;
     }
-
-    #navbar-content {
-        width: 900px
+    .card {
+        margin-right: 50px;
+        margin-bottom: 50px;
     }
 }
 
-.content-parent {
-    display: flex;
-    justify-content: center;
+@media screen and (min-width: 1600px) {
+    #content-parent {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style-type: none;
+    }
 }
 
-.content {
-    max-width: 900px;
+#h2-parent {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
     margin-bottom: 40px;
+}
+
+#h2 {
+    width: 900px;
+    max-width: -webkit-fill-available;
 }
 
 .poster {

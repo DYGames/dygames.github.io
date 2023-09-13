@@ -13,45 +13,48 @@
 
 <body>
     <nav id="navbar-example2" class="navbar bg-light px-3 mb-3">
-        <a class="navbar-brand" href="/index.html">김도엽의 블로그</a>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" href="/article.html?article=portfolio.md">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/index.html">Articles</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/music.html">Music</a>
-            </li>
-        </ul>
+        <div id="navbar-content">
+            <a class="navbar-brand" href="/index.html">김도엽의 블로그</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="/article.html?article=portfolio.md">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/music.html">Music</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="content">
-        <div id="h1">
-            <div class="card">
-                <img src="../images/img.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">김도엽</h5>
-                    <p class="card-text">기타치고 코딩하는 김도엽입니다.</p>
-                    <a target="_blank" href="https://github.com/DYGames" class="btn btn-primary">Github</a>
-                    <a target="_blank" href="https://instagram.com/dygames37" class="btn btn-primary">Instagram</a>
-                </div>
+    <div id="content-parent">
+        <div class="card">
+            <img src="../images/img.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">김도엽</h5>
+                <p class="card-text">기타치고 코딩하는 김도엽입니다.</p>
+                <a target="_blank" href="https://github.com/DYGames" class="btn btn-primary">Github</a>
+                <a target="_blank" href="https://instagram.com/dygames37" class="btn btn-primary">Instagram</a>
             </div>
         </div>
-        <div id="h2">
-            <h1 id="movie">작성 글</h1>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>제목</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+        <div id="h2-parent">
+            <div id="h2">
+                <h1 id="movie">작성 글</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>제목</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
         </div>
     </div>
-
 </body>
 
 </html>
