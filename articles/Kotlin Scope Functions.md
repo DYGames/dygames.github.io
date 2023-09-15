@@ -1,4 +1,4 @@
-# kotlin의 scope function
+# Kotlin Scope Functions
 
 kotlin의 scope function은 객체의 context를 포함한 하나의 목적을 가진 코드 블럭을 실행하는 함수이다.
 

@@ -11,7 +11,7 @@ function initArticleList() {
         .then(function (txt) {
             txt.split("\n").forEach((element, index) => {
                 let column =
-                    `<td><a href="${"/article.html?article=" + element}">${element}</a></td>`
+                    `<td><a href="${"/article.html?article=" + element}">${element.slice(0, -3)}</a></td>`
                 let tr = document.createElement('tr')
                 tr.innerHTML = column
                 document.querySelector("#h2 > table").append(tr)
