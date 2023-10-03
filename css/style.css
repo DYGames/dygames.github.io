@@ -37,6 +37,38 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .period {
+        display: inline-block;
+    }
+
+    .period-key {
+        width: 100%;
+    }
+
+    .period-project {
+        border-left: 3px solid #d7dde3;
+        padding-left: 24px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .period {
+        display: flex;
+    }
+
+    .period-key {
+        width: 30%;
+    }
+
+    .period-project {
+        width: 65%;
+        margin-left: 5%;
+        margin-top: 24px;
+    }
+}
+
 #h2-parent {
     margin-left: 20px;
     margin-right: 20px;

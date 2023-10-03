@@ -15,14 +15,14 @@
 
 <div>
     <h1>경력</h1>
-    <div style="display: flex;">
-    <div style="display: inline-block;width: 30%;">
+    <div class="period">
+    <div class="period-key">
     <h2>우아한테크코스<br>(2023.02 ~ 2023.11)</h2>
     <p>우아한형제들에서 운영하는 9개월 동안 진행되는 현장형 개발 인재 양성 프로그램입니다.</p>
     <p>Kotlin, Android, 객체지향, 클린 코드, 테스트등을 학습하였습니다.</p>
     <p>코드 리뷰, 페어 프로그래밍 등을 경험하고 팀 프로젝트를 통해 강도 높은 협업을 경험하였습니다.</p>
     </div>
-    <div style="display: inline-block;width: 65%;margin-left: 5%;margin-top: 24px">
+    <div class="period-project">
         <md-block class="markdown-body">
             ## 🎵 [Diggin' Room](https://github.com/woowacourse-teams/2023-diggin-room)
             `Android` `Kotlin` `MVVM` `RoomPager`
@@ -57,12 +57,12 @@
         </md-block>
     </div>
     </div>
-    <div style="display: flex;">
-    <div style="display: inline-block;width: 30%;">
+    <div class="period">
+    <div class="period-key">
     <h2>육군본부 SW 개발병<br>(2020.01 ~ 2021.08)</h2>
     <p>육군에서 사용되는 프로그램의 유지보수, 재개발 임무를 수행했습니다.</p>
     </div>
-    <div style="display: inline-block;width: 65%;margin-left: 5%;margin-top: 24px">
+    <div class="period-project">
         <md-block class="markdown-body">
             ## 🪖 장군인사관리체계 재개발
             `Visual Basic` `C#` `Winform`
@@ -88,12 +88,12 @@
         </md-block>
     </div>
     </div>
-    <div style="display: flex;">
-    <div style="display: inline-block;width: 30%;">
+    <div class="period">
+    <div class="period-key">
     <h2>아몽 소프트웨어 인턴<br>(2019.06 ~ 2019.12)</h2>
     <p>교내 현장실습으로 6개월간 키즈카페 등에 설치되는 인터렉티브 미디어 컨텐츠를 개발하였습니다.</p>
     </div>
-    <div style="display: inline-block;width: 65%;margin-left: 5%;margin-top: 24px">
+    <div class="period-project">
         <md-block class="markdown-body">
             ## 🧒 Doplex
             `Unity` `C#` `Kinect`
@@ -112,14 +112,14 @@
     </div>
     </div>
     <h1>수상</h1>
-    <div style="display: flex;">
-    <div style="display: inline-block;width: 30%;">
+    <div class="period">
+    <div class="period-key">
     <h2>우송대학교 KWC 은상<br>(2017.08)</h2>
     <p>학교에서 친구들과 진행한 팀 프로젝트의 결과물을 KWC 대회에 제출해 은상을 수상했습니다.</p>
     <p>프로젝트에서는 초기 기획을 담당하고 팀장 역할을 맡아 프로그래밍을 주도했습니다.</p>
     <p>UI, 게임 규칙, 타일링, 타워 설치, 시점 전환, 플레이어 이동 등 게임 전반을 대부분 구현하였습니다.</p>
     </div>
-    <div style="display: inline-block;width: 65%;margin-left: 5%;margin-top: 24px">
+    <div class="period-project">
         <md-block class="markdown-body">
             ## 🫐 [LotisBerry](https://github.com/DYGames/LotisBerry)
             `Unity` `C#` `3D` `Post-Processing`
@@ -138,13 +138,13 @@
         </md-block>
     </div>
     </div>
-    <div style="display: flex;">
-    <div style="display: inline-block;width: 30%;">
+    <div class="period">
+    <div class="period-key">
     <h2>전국기능경기대회 게임개발직종 동메달<br>(2016.09)</h2>
     <p>DirectX를 이용하여 주어진 기획을 바탕으로 게임을 제작하는 대회입니다.</p>
     <p>직접 제작한 프레임워크에서 완성도 있는 게임을 빠르게 제작하여 은상을 수상하였습니다.</p>
     </div>
-    <div style="display: inline-block;width: 65%;margin-left: 5%;margin-top: 24px">
+    <div class="period-project">
         <md-block class="markdown-body">
             ## 🖥️ [DirectX Framework](https://github.com/DYGames/SkillOlympic_Medieval)
             `C++` `2D` `DirectX`
@@ -159,13 +159,13 @@
         </md-block>
     </div>
     </div>
-    <div style="display: flex;">
-    <div style="display: inline-block;width: 30%;">
+    <div class="period">
+    <div class="period-key">
     <h2>한국게임과학고등학교 학교장배 교내 게임제작대회 금상<br>(2015.11)</h2>
     <p>교내에서 개최된 게임제작대회에서 2D 게임을 제작해 금상을 수상했습니다.</p>
     <p>팀장과 리드 프로그래머를 맡아 게임 전반적인 기능을 관리하고 구현하였습니다.</p>
     </div>
-    <div style="display: inline-block;width: 65%;margin-left: 5%;margin-top: 24px">
+    <div class="period-project">
         <md-block class="markdown-body">
             ## 🍣 [Sushimasen](https://github.com/DYGames/Sushimasen)
             `C++` `2D` `Cocos2d-X`
