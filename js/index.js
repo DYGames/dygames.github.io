@@ -3,15 +3,14 @@ function init() {
 }
 
 function initArticleList() {
-    var path = '../articles/'
-    fetch(path + 'articles.txt')
+    fetch('articles/articles.json')
         .then(function (response) {
-            return response.text()
+            return response.json()
         })
-        .then(function (txt) {
-            txt.split("\n").forEach((element, index) => {
+        .then(function (json) {
+            json.data.forEach((element, index) => {
                 let column =
-                    `<td><a href="${"/article.html?article=" + element}">${element.slice(0, -3)}</a></td>`
+                    `<td><a href="${"/article.html?article=" + element.title}">${element.name || element.title.slice(0, -3)}</a></td>`
                 let tr = document.createElement('tr')
                 tr.innerHTML = column
                 document.querySelector("#h2 > table").append(tr)
