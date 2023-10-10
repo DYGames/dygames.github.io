@@ -19,6 +19,9 @@ function init() {
     let div = document.createElement('div')
     div.innerHTML = column
     document.querySelector("#h2").append(div)
+    window.setTimeout(() => {
+        hljs.highlightAll();
+    }, 100)
 }
 
 window.onload = init
