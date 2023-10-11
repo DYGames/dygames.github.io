@@ -39,6 +39,9 @@
             #### 네트워크 요청, 도메인 로직 등의 수행 결과 로그 확인
             - 기존 코틀린의 Result 클래스를 활용한 LogResult 클래스 구현
             - Sucess, Failure 상황에서 설정한 채널 (콘솔, Firebase)등에 자동으로 로그 출력
+            #### 복잡한, 많은 객체 의존 관계 표현의 어려움
+            - 자동 DI 구현하여 어노테이션으로 의존 주입
+            - Kotlin DSL 활용하여 의존 관계 표현 가능
             #### MVVM의 Binder 계층 구현을 위한 BindingAdapter의 캡슐화 불가, View와 의존 발생
             - UI State 도입
             - 단방향 데이터 흐름 보장
