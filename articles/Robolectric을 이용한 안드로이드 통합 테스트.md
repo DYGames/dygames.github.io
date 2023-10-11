@@ -145,13 +145,13 @@ strokeWidth : 30.0
 
 우리는 일반적으로 `ViewModelProvider`를 통해 ViewModel 인스턴스를 관리한다.
 
-그렇다는 것은 Robolectric으로 생성된 MainActivity의 참조를 이용해 `ViewModelStore`에 미리 테스트 코드에서 생성한 ViewModel을 등록 할 수 있다.
+그렇다는 것은 Robolectric으로 생성된 MainActivity의 참조를 이용해 `ViewModelStore`에서 Activity에서 생성된 뷰모델의 참조를 가져올 수 있다는 뜻이다.
 
 ```kotlin
 val paintViewModel = ViewModelProvider(activity)[PaintViewModel::class.java]
 ```
 
-이렇게 생성된 ViewModel 인스턴스로 우리는 성공적으로 LiveData 값을 검증 가능하다.
+이렇게 가져온 ViewModel 인스턴스로 우리는 성공적으로 LiveData 값을 검증 가능하다.
 
 ```kotlin
 val expected = 30F
