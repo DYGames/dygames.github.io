@@ -25,6 +25,7 @@
     <div class="period-project">
         <md-block class="markdown-body">
             ## 🎵 [Diggin' Room](https://github.com/woowacourse-teams/2023-diggin-room)
+            ### [Play Store](https://play.google.com/store/apps/details?id=com.digginroom.digginroom)
             `Android` `Kotlin` `MVVM` `RoomPager`
             ### 사용자 활동을 기반으로 음악을 추천하는 숏폼 컨텐츠 서비스
             - 아래로 스와이프하며 끊임없이 새로운 음악을 탐색
@@ -84,7 +85,10 @@
             - .tab 악보 포맷 정의
             - HTML Canvas를 이용해 악보 표시
             - SoundFont를 이용해 여러 음색으로 악보 재생 가능
-            - https://youtu.be/cOPHI_Lp0rA
+            <br>
+            <iframe width="400" height="225"
+                src="https://www.youtube.com/embed/cOPHI_Lp0rA">
+            </iframe>
         </md-block>
     </div>
     </div>
@@ -128,13 +132,15 @@
             - NavMesh를 이용해 적의 이동 경로, 타겟 우선순위 결정
             - Top-View, Quarter-View 시점 전환
             - 마우스 포인팅에 따른 플레이어 총구 겨냥 애니메이션 구현
-            - https://youtu.be/feGyPshVzlU
             ### 🛠️ Troubleshooting
             #### 시점 전환시 자연스러운 효과
             - Camera의 ProjectionMatrix를 가져와 행렬에 대한 선형 보간 수행
             - Coroutine을 이용해 보간 값을 Camera에 적용
             #### NavMeshAgent가 목표 타워에 도달하더라도 멈추지 않고 공격을 하지 않는 문제
             - NavMeshAgent의 Stop Distance를 설정하고 일정 거리 이상 도달시 멈추도록 설정
+            <iframe width="400" height="225"
+                src="https://www.youtube.com/embed/feGyPshVzlU">
+            </iframe>
         </md-block>
     </div>
     </div>
