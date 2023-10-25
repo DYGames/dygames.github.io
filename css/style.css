@@ -1,8 +1,17 @@
 .card {
-    margin-left: auto;
     width: 300px;
     height: 350px;
+    flex-wrap: wrap;
     margin-bottom: 50px;
+}
+
+.card-parent {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 900px;
+    display: flex;
+    justify-content: end;
+    align-self: center;
 }
 
 #navbar-example2 {
@@ -18,22 +27,24 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1600px) {
-    #content-parent {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .card {
-        margin-right: 50px;
-        margin-bottom: 50px;
-    }
+#content-parent {
+    display: flex;
+    flex-direction: column-reverse;
 }
+ 
+@media print {
+    .period {
+        display: flex;
+    }
 
-@media screen and (min-width: 1600px) {
-    #content-parent {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        list-style-type: none;
+    .period-key {
+        width: 30%;
+    }
+
+    .period-project {
+        width: 65%;
+        margin-left: 5%;
+        margin-top: 24px;
     }
 }
 
