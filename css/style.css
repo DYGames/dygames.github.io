@@ -33,6 +33,16 @@
 }
  
 @media print {
+    iframe {
+        visibility: hidden;
+        margin-bottom: -400px;
+    }
+
+    nav {
+        visibility: hidden;
+        margin-top: -56px;
+    }
+
     .period {
         display: flex;
     }
