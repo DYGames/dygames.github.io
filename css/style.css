@@ -32,6 +32,10 @@
     flex-direction: column-reverse;
 }
  
+img {
+    border-radius: 5px;
+}
+
 @media print {
     iframe {
         visibility: hidden;

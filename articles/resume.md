@@ -1,10 +1,21 @@
-# **안드로이드 / 게임 개발자, 기타리스트 김도엽**
+# **안드로이드 / 게임 개발자 김도엽**
 
-📱 010-8988-1837
-
-#️⃣ [https://github.com/DYGames](https://github.com/DYGames)
-
-📧 [dygames34@gmail.com](mailto:dygames34@gmail.com)
+<div style="display: flex">
+    <div style="display: flex">
+        <img src="../images/img.jpg" style="width: 400px" alt="...">
+    </div>
+    <div style="display: flex">
+        <md-block class="markdown-body">
+            - 🎂 1999년 8월 26일
+            - 📱 010-8988-1837
+            - #️⃣ [https://github.com/DYGames](https://github.com/DYGames)
+            - 📝 [https://dygames.github.io](https://dygames.github.io)
+            - 📸 [https://instagram.com/dygames37](https://instagram.com/dygames37)
+            - 📧 [dygames34@gmail.com](mailto:dygames34@gmail.com)
+        </md-block>
+    </div>
+</div>
+<br>
 
 > 사용자에게 최종적으로 제공되는 형태의 프로그램과 그 기반 기술의 구현에 관심이 많습니다.
 <div>
@@ -49,7 +60,6 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
             ### 🤙 역할
             - 초기 아이디어, 앱 전체 흐름을 기획
             - 안드로이드 아키텍쳐 구조, 추천 알고리즘 설계
-            - 전반적인 기술 스택과 컨벤션, 코드 리뷰, CI 등 팀 문화 제안
             - RoomPager, Youtube Player 구현
             ### 🛠️ Troubleshooting
             #### 기존 RecyclerView, ViewPager등으론 숏폼 형태의 페이징 뷰 구현이 불가

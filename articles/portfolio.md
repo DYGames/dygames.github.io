@@ -4,27 +4,30 @@
     <md-block class="markdown-body">
         ## 🎵 [Diggin' Room](https://github.com/woowacourse-teams/2023-diggin-room)
         ### [🏪 Play Store](https://play.google.com/store/apps/details?id=com.digginroom.digginroom)
-        `Android` `Kotlin` `MVVM` `RoomPager`
+        `Android` `Kotlin` `MVVM` `UI State` `RoomPager`
         ### 사용자 활동을 기반으로 음악을 추천하는 숏폼 컨텐츠 서비스
         - 아래로 스와이프하며 끊임없이 새로운 음악을 탐색
+            - 장르 기반으로 사용자가 좋아할 수 있는 음악을 예측해서 추천
+            - 가중치 기반 추천 알고리즘 직접 구현
         - 마음에 들지 않는 음악은 옆으로 스와이프
-        - 장르 기반으로 사용자가 좋아할 수 있는 음악을 예측해서 추천
+            - 해당 음악의 장르 가중치 조절
         - 탐색하며 발견한 음악을 스크랩하여 저장
+            - 스크랩한 음악은 유튜브 재생목록으로 추출 가능
         - 음악 메타데이터 제공
-        - <video width="157" height="345" controls autoplay>
-            <source src="https://raw.githubusercontent.com/DYGames/dygames.github.io/master/articles/images/portfolio/explorer.mov" type="video/mp4">
+        - <video width="157" height="345" controls autoplay loop muted>
+            <source src="../articles/images/portfolio/explorer.mov" type="video/mp4">
         </video>
-        <video width="157" height="345" controls autoplay>
-            <source src="https://raw.githubusercontent.com/DYGames/dygames.github.io/master/articles/images/portfolio/scrap.mov" type="video/mp4">
+        <video width="157" height="345" controls autoplay loop muted>
+            <source src="../articles/images/portfolio/scrap.mov" type="video/mp4">
         </video>
-        <video width="157" height="345" controls autoplay>
-            <source src="https://raw.githubusercontent.com/DYGames/dygames.github.io/master/articles/images/portfolio/comment.mov" type="video/mp4">
+        <video width="157" height="345" controls autoplay loop muted>
+            <source src="../articles/images/portfolio/comment.mov" type="video/mp4">
         </video>
-        ### 🤙 역할
+        ### 🤙 역할 
         - 초기 아이디어, 앱 전체 흐름을 기획
         - 안드로이드 아키텍쳐 구조, 추천 알고리즘 설계
-        - 전반적인 기술 스택과 컨벤션, 코드 리뷰, CI 등 팀 문화 제안
-        - RoomPager, Youtube Player 구현
+        - 숏폼 형식 페이저 뷰 RoomPager 구현
+        - Youtube IFrame API를 이용해 영상을 재생하는 YoutubeRoomPlayer 구현
         ### 🛠️ Troubleshooting
         #### 기존 RecyclerView, ViewPager등으론 숏폼 형태의 페이징 뷰 구현이 불가
         - 뷰 리사이클링, 영상 미리 로딩, 4방향 페이징, 부드러운 페이징을 제공하는 **RoomPager** Custom View 개발
