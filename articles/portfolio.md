@@ -2,8 +2,7 @@
 
 <div class="period">
     <md-block class="markdown-body">
-        ## 🎵 [Diggin' Room](https://github.com/woowacourse-teams/2023-diggin-room)
-        ### [🏪 Play Store](https://play.google.com/store/apps/details?id=com.digginroom.digginroom)
+        # 🎵 [Diggin' Room](https://github.com/woowacourse-teams/2023-diggin-room) ([🏪 Play Store](https://play.google.com/store/apps/details?id=com.digginroom.digginroom))
         `Android` `Kotlin` `MVVM` `UI State` `RoomPager`
         ### 사용자 활동을 기반으로 음악을 추천하는 숏폼 컨텐츠 서비스
         - 아래로 스와이프하며 끊임없이 새로운 음악을 탐색
@@ -26,22 +25,77 @@
         ### 🤙 역할 
         - 초기 아이디어, 앱 전체 흐름을 기획
         - 안드로이드 아키텍쳐 구조, 추천 알고리즘 설계
-        - 숏폼 형식 페이저 뷰 RoomPager 구현
-        - Youtube IFrame API를 이용해 영상을 재생하는 YoutubeRoomPlayer 구현
-        ### 🛠️ Troubleshooting
+        ## 구현
+        ### Youtube IFrame API를 이용해 영상을 재생하는 YoutubeRoomPlayer 구현
+        기존의 기획은 HLS 프로토콜을 이용한 영상을 직접 스트리밍 하려고 하였으나, 유튜브의 음악 데이터를 활용하고 개발 기간을 줄이기 위해 WebView위에서 Youtube 영상을 재생하는 방식으로 구현하였습니다.
+        <br>
+        **영상 플레이어 인터페이스**
+        ```kotlin
+        interface RoomPlayer : Adapter.ViewHolder {
+            fun play()
+            fun pause()
+            fun navigate(roomInfoUiState: RoomInfoUiState)
+        }
+        ```
+        WebView에서 Youtube IFrame API 제어를 위한 API 로딩, 영상 로딩, 재생, 일시정지등을 JS로 구현했습니다.
+        또한 부드러운 사용자 경험을 위해 영상을 캐싱하고 있는데, 영상 로딩 등의 상태에 대해 Kotlin과 인터페이스를 연결해주어 앱 단에서 제어할 수 있도록 하였습니다.
+        ```kotlin
+        @JavascriptInterface
+        fun onPlay() {
+            post {
+                onYoutubePlay()
+            }
+        }
+        ```
+        ### 숏폼 형식 페이저 뷰 [RoomPager](https://github.com/DYGames/RoomPager) 구현
         #### 기존 RecyclerView, ViewPager등으론 숏폼 형태의 페이징 뷰 구현이 불가
         - 뷰 리사이클링, 영상 미리 로딩, 4방향 페이징, 부드러운 페이징을 제공하는 **RoomPager** Custom View 개발
         - Paging 상태에 따라 화면 밖의 YoutubePlayer 조작하여 최적의 숏폼 경험 제공
-        #### 네트워크 요청, 도메인 로직 등의 수행 결과 로그 확인
+        ## 🛠️ Troubleshooting
+        ### 네트워크 요청, 도메인 로직 등의 수행 결과 로그 확인
         - 기존 코틀린의 Result 클래스를 활용한 LogResult 클래스 구현
         - Success, Failure 상황에서 설정한 채널 (콘솔, Firebase)등에 자동으로 로그 출력
-        #### 복잡한, 많은 객체 의존 관계 표현의 어려움
-        - 자동 DI 구현하여 어노테이션으로 의존 주입
-        - Kotlin DSL 활용하여 의존 관계 표현 가능
-        #### 서버 단의 음악 추천 알고리즘의 서비스 레이어 종속
-        - 도메인 역할인 음악 추천 알고리즘을 의존성 분리
-        - IoC로 도메인 레이어인 Repository 참조를 갖는 RoomRecommender 구현
-        - 백엔드 인원과 토의 후 직접 [PR](https://github.com/woowacourse-teams/2023-diggin-room/pull/380)을 보내 설득
+        ### 자동 DI 구현
+        기존에는 수동으로 객체 의존 관계를 설정하여 이를 관리하는 클래스가 따로 있었습니다.
+        ```kotlin
+        class RepositoryProvider(context: Context) {
+            private val localDataSourceProvider = LocalDataSourceProvider(context)
+            ...
+            val roomRepository = DefaultRoomRepository(remoteDataSourceProvider.roomRemoteDataSource)
+            ...
+        }
+        ```
+        각 계층의 객체가 많아지고 관계가 복잡해져서 수동으로 관리하기 어려워지는 문제가 발생했습니다.
+        Reflection을 이용해 객체 생성자를 검색하고 자동으로 의존을 주입해주는 자동 DI를 개발해 해결했습니다.
+        Singleton, Qualifier, Lifecycle등의 기능도 어노테이션을 활용하도록 지원했습니다.
+        또한 초기 의존 관계를 DSL로 표현할 수 있도록 하였습니다.
+        ```kotlin
+        dependencies {
+            lifecycle<DigginRoomApplication> {
+                provider<OkHttpClient> {
+                    OkHttpClient.Builder().addInterceptor(inject()).build()
+                }
+                qualifier(Token()) {
+                    provider<RoomService> {
+                        inject<Retrofit>().create(RoomService::class.java)
+                    }
+                }
+                qualifier(UnAuthorized()) {
+                    provider<AccountService> {
+                        inject<Retrofit>().create(AccountService::class.java)
+                    }
+                }
+                provider<GenreTasteRepository>(typeOf<DefaultGenreTasteRepository>())
+            }
+        }
+        ```
+        ### 서버 단의 음악 추천 알고리즘의 서비스 레이어 종속
+        음악 추천 알고리즘은 팀 전체가 공유할 수 있는 도메인 레이어에 속합니다.
+        기존에 구현상의 편의로 Spring의 Service 클래스 안에 구현되어있었습니다.
+        이는 개선 여지가 있다고 생각해 회의를 다수 진행했지만 일정상의 문제로 거절되었습니다.
+        결국 직접 도메인 레이어인 Repository 참조를 갖는 도메인 서비스인 RoomRecommender를 구현하였습니다.
+        이렇게 백엔드 코드를 수정해 PR을 보내고, 해당 코드를 기반으로 설득하여 프로젝트에 적용되었습니다.
+        <img style="width: 600px" src="../articles/images/portfolio/ioc.png" alt="..."></img>
         ## ♻️ [RoomPager (Open Source)](https://github.com/DYGames/RoomPager)
         `Android` `Kotlin` `Custom View`
         ### 안드로이드 4방향 리사이클링 페이저 뷰 | [개발기](https://dygames.github.io/article.html?article=Android%EC%97%90%EC%84%9C%204%EB%B0%A9%ED%96%A5%20%EC%9E%AC%ED%99%9C%EC%9A%A9%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EB%B7%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20+%20Youtube%20WebView%20%EC%9E%AC%EC%83%9D.md)
@@ -72,7 +126,23 @@
         `React` `JS`
         ### 기타 악보를 웹에서 편집/재생 하는 서비스
         - .tab 악보 포맷 정의
-        - HTML Canvas를 이용해 악보 표시
+        ``` 
+        127 2 'n' 'n' 2 3 3 1  
+        127 3 'x' 'x' 4 5 5 3  
+        127 8  
+        127 3 'E' 6  
+        127 3 'E' 6 'A' 8  
+        127 3 'D' 8  
+        127 3 'G' 7  
+                        ^
+        e||-----------x-----------------|----
+        B||-----------x-----------------|----
+        G||-----2-----4--------------7--|----
+        D||-----3-----5-----------8-----|----
+        A||-----3-----5--------8--------|----
+        E||-----1-----3-----6--6--------|----
+        ```
+        - HTML5 Canvas를 이용해 해당 악보 포맷을 렌더링, 수정 가능
         - SoundFont를 이용해 여러 음색으로 악보 재생 가능
         <br>
         <iframe width="400" height="225"

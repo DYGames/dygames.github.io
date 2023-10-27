@@ -19,6 +19,10 @@
     justify-content: center;
 }
 
+.toolbar {
+    visibility: hidden;
+}
+
 #navbar-content {
     margin-left: 20px;
     margin-right: 20px;
@@ -76,6 +80,20 @@ img {
         padding-left: 24px;
         width: 100%;
     }
+
+    .profile {
+        display: inline-block;
+    }
+
+    .profile-key {
+        width: 100%;
+    }
+
+    .profile-value {
+        width: 100%;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -91,6 +109,19 @@ img {
         width: 65%;
         margin-left: 5%;
         margin-top: 24px;
+    }
+
+    .profile {
+        display: flex;
+    }
+
+    .profile-key {
+        width: 50%;
+    }
+
+    .profile-value {
+        width: 45%;
+        margin-left: -40px;
     }
 }
 

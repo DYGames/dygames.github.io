@@ -1,10 +1,10 @@
 # **안드로이드 / 게임 개발자 김도엽**
 
-<div style="display: flex">
-    <div style="display: flex">
+<div class="profile">
+    <div class="profile-key">
         <img src="../images/img.jpg" style="width: 400px" alt="...">
     </div>
-    <div style="display: flex">
+    <div class="profile-value">
         <md-block class="markdown-body">
             - 🎂 1999년 8월 26일
             - 📱 010-8988-1837
@@ -19,7 +19,7 @@
 
 > 사용자에게 최종적으로 제공되는 형태의 프로그램과 그 기반 기술의 구현에 관심이 많습니다.
 <div>
-2015년부터 프로그래밍을 시작해 C++ (DirectX, Cocos2d-X), C# (Unity) 등의 기술로 다양한 게임을 꾸준히 개발했습니다.
+2015년부터 프로그래밍을 시작해 다양한 게임을 꾸준히 개발했습니다.
 기존 게임 엔진의 구조를 분석하여 직접 <b>2D 게임 엔진을 제작</b>했고, 이를 이용해 게임을 제작하고 <b>전국기능경기대회</b>에 출전하여 수상하였습니다.
 <br>
 <br>
