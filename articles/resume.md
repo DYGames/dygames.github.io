@@ -6,12 +6,11 @@
     </div>
     <div class="profile-value">
         <md-block class="markdown-body">
-            - 🎂 1999년 8월 26일
-            - 📱 010-8988-1837
             - #️⃣ [https://github.com/DYGames](https://github.com/DYGames)
             - 📝 [https://dygames.github.io](https://dygames.github.io)
             - 📸 [https://instagram.com/dygames37](https://instagram.com/dygames37)
             - 📧 [dygames34@gmail.com](mailto:dygames34@gmail.com)
+            - 📱 010-8988-1837
         </md-block>
     </div>
 </div>
