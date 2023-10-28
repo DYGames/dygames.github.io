@@ -64,6 +64,18 @@ img {
         margin-left: 5%;
         margin-top: 24px;
     }
+
+    .profile {
+        display: flex;
+    }
+
+    .profile-key {
+        width: 50%;
+    }
+
+    .profile-value {
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
