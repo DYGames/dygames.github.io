@@ -1,9 +1,6 @@
 # **안드로이드 / 게임 개발자 김도엽**
 
 <div class="profile">
-    <div class="profile-key">
-        <img src="../images/img.jpg" style="width: 400px" alt="...">
-    </div>
     <div class="profile-value">
         <md-block class="markdown-body">
             - #️⃣ [https://github.com/DYGames](https://github.com/DYGames)
@@ -61,6 +58,10 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
             - 안드로이드 아키텍쳐 구조, 추천 알고리즘 설계
             - RoomPager, Youtube Player 구현
             ### 🛠️ Troubleshooting
+            #### [협업] 서버 단의 음악 추천 알고리즘의 서비스 레이어 종속
+            - 도메인 역할인 음악 추천 알고리즘을 의존성 분리
+            - IoC로 도메인 레이어인 Repository 참조를 갖는 RoomRecommender 구현
+            - 백엔드 인원과 토의 후 직접 [PR](https://github.com/woowacourse-teams/2023-diggin-room/pull/380)을 보내 설득
             #### 기존 RecyclerView, ViewPager등으론 숏폼 형태의 페이징 뷰 구현이 불가
             - 뷰 리사이클링, 영상 미리 로딩, 4방향 페이징, 부드러운 페이징을 제공하는 **RoomPager** Custom View 개발
             - Paging 상태에 따라 화면 밖의 YoutubePlayer 조작하여 최적의 숏폼 경험 제공
@@ -70,10 +71,6 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
             #### 복잡한, 많은 객체 의존 관계 표현의 어려움
             - 자동 DI 구현하여 어노테이션으로 의존 주입
             - Kotlin DSL 활용하여 의존 관계 표현 가능
-            #### 서버 단의 음악 추천 알고리즘의 서비스 레이어 종속
-            - 도메인 역할인 음악 추천 알고리즘을 의존성 분리
-            - IoC로 도메인 레이어인 Repository 참조를 갖는 RoomRecommender 구현
-            - 백엔드 인원과 토의 후 직접 [PR](https://github.com/woowacourse-teams/2023-diggin-room/pull/380)을 보내 설득
             ## ♻️ [RoomPager (Open Source)](https://github.com/DYGames/RoomPager)
             `Android` `Kotlin` `Custom View`
             ### 안드로이드 4방향 리사이클링 페이저 뷰 | [개발기](https://dygames.github.io/article.html?article=Android%EC%97%90%EC%84%9C%204%EB%B0%A9%ED%96%A5%20%EC%9E%AC%ED%99%9C%EC%9A%A9%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EB%B7%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20+%20Youtube%20WebView%20%EC%9E%AC%EC%83%9D.md)
