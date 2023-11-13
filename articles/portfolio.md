@@ -8,19 +8,11 @@
             <br>
             ### [🏪 Play Store](https://play.google.com/store/apps/details?id=com.digginroom.digginroom)
             ### 사용자 활동을 기반으로 음악을 추천하는 숏폼 컨텐츠 서비스
-            ### 🖥️ 기능 
-            - 아래로 스와이프하며 끊임없이 새로운 음악을 탐색
-                - 장르 기반으로 사용자가 좋아할 수 있는 음악을 예측해서 추천
-                - 가중치 기반 추천 알고리즘 직접 구현
-            - 마음에 들지 않는 음악은 옆으로 스와이프
-                - 해당 음악의 장르 가중치 조절
-            - 탐색하며 발견한 음악을 스크랩하여 저장
-                - 스크랩한 음악은 유튜브 재생목록으로 추출 가능
-            - 음악 메타데이터 제공
         </md-block>
         </div>
         <div class="period-project">
             <md-block class="markdown-body">
+            ## 🖥️ 기능 
             - <div style="display: flex; justify-content: space-evenly;">
                 <video width="157" height="345" controls >
                     <source src="../articles/images/portfolio/explorer.mov" type="video/mp4">
@@ -33,6 +25,14 @@
                 </video>
             </div>
             <br>
+            - 아래로 스와이프하며 끊임없이 새로운 음악을 탐색
+                - 장르 기반으로 사용자가 좋아할 수 있는 음악을 예측해서 추천
+                - 가중치 기반 추천 알고리즘 직접 구현
+            - 마음에 들지 않는 음악은 옆으로 스와이프
+                - 해당 음악의 장르 가중치 조절
+            - 탐색하며 발견한 음악을 스크랩하여 저장
+                - 스크랩한 음악은 유튜브 재생목록으로 추출 가능
+            - 음악 메타데이터 제공
             ## 🤙 역할
             - 초기 아이디어, 앱 전체 흐름을 기획
             - 안드로이드 아키텍쳐 구조, 추천 알고리즘 설계
@@ -91,15 +91,15 @@
                 # ♻️ [RoomPager (Open Source)](https://github.com/DYGames/RoomPager)
                 `Android` `Kotlin` `Custom View`
                 ### 안드로이드 4방향 리사이클링 페이저 뷰 | [개발기](https://dygames.github.io/article.html?article=Android%EC%97%90%EC%84%9C%204%EB%B0%A9%ED%96%A5%20%EC%9E%AC%ED%99%9C%EC%9A%A9%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EB%B7%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20+%20Youtube%20WebView%20%EC%9E%AC%EC%83%9D.md)
+                </md-block>
+            </div>
+            <div class="period-project">
+                <md-block class="markdown-body">
                 ## 🖥️ 기능 
                 - 페이징시 뷰 재사용으로 성능 최적화
                 - RecyclerView와 흡사하게 Adapter, ViewHolder 구현으로 사용 가능
                 - 4방향 스크롤로 제스쳐 구현 가능
                 - Maven Repository에 배포
-                </md-block>
-            </div>
-            <div class="period-project">
-                <md-block class="markdown-body">
                 ## 🛠️ Troubleshooting
                 ### 1. [리팩터링] 양 방향 스크롤 뷰에 대해 중복되는 코드 제거
                 Android의 ScrollView, HorizontalScrollView는 FrameLayout을 상속받아 scrollTo()와 같은 메소드를 재사용 불가했습니다.
@@ -120,10 +120,16 @@
                 <br>
             </div>
         </div>
+        <div class="period">
+        <div class="period-key">
         <md-block class="markdown-body">
         # 🪖 장군인사관리체계 재개발
         `Visual Basic` `C#` `Winform`
         ### 군에서 사용되는 대규모 프로그램의 호환성 문제 해결을 위해 재개발
+        </md-block>
+        </div>
+        <div class="period-project">
+        <md-block class="markdown-body">
         ## 🤙 수행 내용
         - Visual Basic으로 작성된 코드를 해석하여 C# Winform으로 변환
         - Oracle DB, Excel등 기존 연동 기능도 호환되도록 재개발
@@ -136,10 +142,19 @@
         ### 2. Visual Basic에서 제공하는 문서 프린터 출력 함수가 C#에는 미제공
         - 문서를 프린터에 출력 할 수 있도록 직접 렌더링하는 기능 구현
         - 문서 양식을 지정한 뷰를 생성하고, 이 양식을 뷰와 프린터 양측에 출력하도록 함
+        </md-block>
+        </div>
+        </div>
+        <div class="period">
+        <div class="period-key">
+        <md-block class="markdown-body">
         # 🎸 [Tab-share](https://github.com/DYGames/tab-share)
         `React` `JS`
         ### 기타 악보를 웹에서 편집/재생 하는 서비스
-        ## 🖥️ 기능
+        </md-block>
+        </div>
+        <div class="period-project">
+        <md-block class="markdown-body">## 🖥️ 기능
         악보를 디지털 형태로 표현하기 위해 직접 파일 스펙을 정의했습니다.
         음표, 쉼표, 박자, 음, 프렛, 줄 등을 설정 할 수 있습니다.
         ``` 
@@ -164,9 +179,19 @@
         <iframe width="400" height="225"
             src="https://www.youtube.com/embed/cOPHI_Lp0rA">
         </iframe>
+        </md-block>
+        </div>
+        </div>
+        <div class="period">
+        <div class="period-key">
+        <md-block class="markdown-body">
         # 🧒 Doplex
         `Unity` `C#` `Kinect`
         ### 유아용 인터렉티브 미니게임 서비스
+        </md-block>
+        </div>
+        <div class="period-project">
+        <md-block class="markdown-body">
         ## 🖥️ 기능
         - 키즈카페, 박람회 등에서 빔 프로젝터로 투사된 영상에 볼풀 공을 던져 진행하는 게임
         - Kinect 센서 값을 이용해 볼 터치를 인식하고 이를 게임과 연결하여 게임 동작
@@ -178,10 +203,20 @@
         ### 전국의 게임이 설치되어 있는 곳에 업데이트를 제공
         - 자동 패치 시스템 구현
         - 새로운 버전 출시시 최초 실행시 자동으로 업데이트하도록 구현
+        </md-block>
+        </div>
+        </div>
+        <div class="period">
+        <div class="period-key">
+        <md-block class="markdown-body">
         # 🫐 [LotisBerry](https://github.com/DYGames/LotisBerry)
         `Unity` `C#` `3D` `Post-Processing`
-        ## 과일 나무를 지키는 3D 타워 디펜스 게임
-        # 🖥️ 기능
+        ### 과일 나무를 지키는 3D 타워 디펜스 게임
+        </md-block>
+        </div>
+        <div class="period-project">
+        <md-block class="markdown-body">
+        ## 🖥️ 기능
         - Tile 구조로 맵 상에 타워를 배치
         - NavMesh를 이용해 적의 이동 경로, 타겟 우선순위 결정
         - Top-View, Quarter-View 시점 전환
@@ -197,9 +232,20 @@
         <iframe width="400" height="225"
             src="https://www.youtube.com/embed/feGyPshVzlU">
         </iframe>
+        </md-block>
+        </div>
+        </div>
+        <div class="period">
+        <div class="period-key">
+        <md-block class="markdown-body">
         # 🖥️ [DirectX 2D Game Engine](https://github.com/DYGames/SkillOlympic_Medieval)
         `C++` `2D` `DirectX`
-        ## DirectX 9으로 제작된 2D Game Engine
+        ### DirectX 9으로 제작된 2D Game Engine
+        </md-block>
+        </div>
+        <div class="period-project">
+        <md-block class="markdown-body">
+        ## 🖥️ 구현
         - Tree 구조의 Game Object 관리
         ```cpp
         D3DXMATRIX getMatrix()
@@ -218,9 +264,20 @@
         - 2D Sprite Rendering
         - Input System
         - 2D 물리, 충돌
+        </md-block>
+        </div>
+        </div>
+        <div class="period">
+        <div class="period-key">
+        <md-block class="markdown-body">
         # 🍣 [Sushimasen](https://github.com/DYGames/Sushimasen)
         `C++` `2D` `Cocos2d-X`
-        ## 초밥 가게를 운영하는 타이쿤 게임
+        ### 초밥 가게를 운영하는 타이쿤 게임
+        </md-block>
+        </div>
+        <div class="period-project">
+        <md-block class="markdown-body">
+        ## 🖥️ 기능
         - 조리, 서빙 두 가지 화면으로 구성
         - 조리 탭에선 손님이 주문한 요리를 조합법에 따라 제작
         - 요리를 많이 제작할수록 조합법이 해금되어 더 많은 수익 창출 가능
@@ -228,5 +285,8 @@
         ## 🛠️ Troubleshooting
         ### 전역에서 관리되어야하는 시간, 금액 등의 데이터 관리
         - Singleton 패턴을 이용하여 필요한 곳에서 접근 가능하도록 구현
+        </md-block>
+        </div>
+        </div>
     </md-block>
 </div>
