@@ -28,13 +28,47 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
 이때 영상 페이징을 쉽게 해주는 <b>커스텀 뷰를 제작</b>하고, 오픈소스화하여 배포까지 하였습니다.
 <br>
 <br>
-
-[음반 수집](https://rateyourmusic.com/collection/dygames/)과 [기타 연주](https://www.youtube.com/channel/UC-qJ9aVGyR909i67bf_0jAQ)를 즐겨합니다. 최근엔 [포스트-하드코어](https://rateyourmusic.com/genre/post-hardcore/)를 가장 많이 듣고 있습니다.
+현재는 ZETIC.ai에서 온디바이스 AI 추론 라이브러리를 개발하고 있습니다.
 <br>
 </div>
 
 <div>
     <h1>경력</h1>
+    <div class="period">
+    <div class="period-key">
+    <h2>ZETIC.ai<br>(2024.06 ~ )</h2>
+    <p>온디바이스 AI 추론 솔루션 제공</p>
+    <p>C++, Kotlin, Swift, CMake를 이용한 모바일 네이티브 라이브러리 아키텍쳐 설계,
+브릿징, 개발과 구성요소 빌드, 최적화</p>
+    <p>온디바이스 AI 데모를 위한 모델 전/후처리, 데모 앱 개발</p>
+    <p>AWS Device Farm에서 AI 모델의 Android/iOS 디바이스 추론 성능 벤치마킹 시스템
+개발</p>
+    </div>
+    <div class="period-project">
+        <md-block class="markdown-body">
+            ## [ZETIC.MLange](https://zetic.ai/mlange)
+            `Android` `Kotlin` `JNI` `iOS` `Swift` `CMake`
+            ### Android와 iOS에서 사용되는 온디바이스 AI 추론 서비스
+            - C++, Kotlin, Swift, CMake를 이용한 모바일 네이티브 라이브러리 개발
+            - ONNX Runtime, Qualcomm QNN, TFLite SDK를 이용해 모델 추론
+            - Android Studio, XCode에서 Gradle과 CMake를 이용한 빌드 구조 설계
+            - Java(JNI), Swift 인터페이스 개발 과정에서 GC, 비동기 로직의 언어간 메모리 생명주기 일치, Wrapping 과정의 메모리 최적화와 누수 관리
+            ## ZETIC.MLange Benchmark
+            `Android` `Kotlin` `Python` `boto3` `Swift`
+            ### 디바이스별 최적화된 모델 Runtime 선택을 위해 AWS Device Farm의 Android/iOS 디바이스 모델 추론 성능 벤치마킹 시스템 개발
+            - boto3를 이용하여 AWS Device Farm에 테스트 패키지 생성과 배포
+            - 모델 추론 시간, SNR 측정 테스트 코드 작성
+            - Device, Runtime, Chip Type 별 추론 시간과 SNR을 측정하여 보고서 생성
+            ## [ZETIC.MLange Demo Apps](https://docs.zetic.ai/examples/face_emotion_recognition.html)
+            `Android` `Kotlin` `JNI` `iOS` `Swift` `CMake`
+            ### ZETIC.MLange를 이용한 온디바이스 데모 앱 개발
+            - YOLOv8, YAMNet, Face Detection, Whisper, LLaMA 모델에 대한 전/후처리 로직 작성
+                - Tokenizer, Mel-spectrogram, NMS 등 구현
+                - Camera2, Audio 등 기기 입력 로직 구현
+            - Play Store, App Store 배포
+        </md-block>
+    </div>
+    </div>
     <div class="period">
     <div class="period-key">
     <h2>우아한테크코스<br>(2023.02 ~ 2023.11)</h2>
@@ -44,8 +78,8 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
     </div>
     <div class="period-project">
         <md-block class="markdown-body">
-            ## 🎵 [Diggin' Room](https://github.com/woowacourse-teams/2023-diggin-room)
-            ### [🏪 Play Store](https://play.google.com/store/apps/details?id=com.digginroom.digginroom)
+            ## [Diggin' Room](https://github.com/woowacourse-teams/2023-diggin-room)
+            ### [Play Store](https://play.google.com/store/apps/details?id=com.digginroom.digginroom)
             `Android` `Kotlin` `MVVM` `RoomPager`
             ### 사용자 활동을 기반으로 음악을 추천하는 숏폼 컨텐츠 서비스
             - 아래로 스와이프하며 끊임없이 새로운 음악을 탐색
@@ -53,11 +87,11 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
             - 장르 기반으로 사용자가 좋아할 수 있는 음악을 예측해서 추천
             - 탐색하며 발견한 음악을 스크랩하여 저장
             - 음악 메타데이터 제공
-            ### 🤙 역할
+            ### 역할
             - 초기 아이디어, 앱 전체 흐름을 기획
             - 안드로이드 아키텍쳐 구조, 추천 알고리즘 설계
             - RoomPager, Youtube Player 구현
-            ### 🛠️ Troubleshooting
+            ### Troubleshooting
             #### [협업] 서버의 추천 알고리즘을 도메인 레이어로 이동
             - 도메인 역할인 음악 추천 알고리즘을 의존성 분리
             - IoC로 도메인 레이어인 Repository 참조를 갖는 RoomRecommender 구현
@@ -73,14 +107,14 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
             - 복잡한, 많은 객체 의존 관계 표현의 어려움
             - 자동 DI 구현하여 어노테이션으로 의존 주입
             - Kotlin DSL 활용하여 의존 관계 표현 가능
-            ## ♻️ [RoomPager (Open Source)](https://github.com/DYGames/RoomPager)
+            ## [RoomPager (Open Source)](https://github.com/DYGames/RoomPager)
             `Android` `Kotlin` `Custom View`
             ### 안드로이드 4방향 리사이클링 페이저 뷰 | [개발기](https://dygames.github.io/article.html?article=Android%EC%97%90%EC%84%9C%204%EB%B0%A9%ED%96%A5%20%EC%9E%AC%ED%99%9C%EC%9A%A9%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EB%B7%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20+%20Youtube%20WebView%20%EC%9E%AC%EC%83%9D.md)
             - Diggin' Room 프로젝트에서 사용되는 페이징 뷰
             - RecyclerView와 흡사하게 Adapter, ViewHolder 구현으로 사용 가능
             - 뷰 재사용으로 성능 최적화
             - 4방향 스크롤로 제스쳐 구현 가능
-            ### 🛠️ Troubleshooting
+            ### Troubleshooting
             #### ScrollView, HorizontalScrollView는 FrameLayout을 상속받아 scrollTo()와 같은 메소드를 재사용 불가
             - 두 스크롤뷰에서 공통적인 특징을 추출하여 추상화하고 RoomPager 로직에서 중복되는 코드 제거
             #### 뷰 재사용시 위해 9개의 뷰를 동시에 로딩하여 과부하 발생
@@ -95,13 +129,13 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
     </div>
     <div class="period-project">
         <md-block class="markdown-body">
-            ## 🪖 장군인사관리체계 재개발
+            ## 장군인사관리체계 재개발
             `Visual Basic` `C#` `Winform`
             ### 군에서 사용되는 대규모 프로그램의 호환성 문제 해결을 위해 재개발
             - Visual Basic으로 작성된 코드를 해석하여 C# Winform으로 변환
             - Oracle DB, Excel등 기존 연동 기능도 호환되도록 재개발
             - 실시간 투표 기능을 위해 DB 폴링 구현
-            ### 🛠️ Troubleshooting
+            ### Troubleshooting
             #### 문서와 인수자가 존재하지 않는 코드
             - 기존과 정확히 동일한 뷰와 로직 작동이 보장되도록 구현
             - VB을 학습하고, C# Winform에서 비슷하게 동작하는 컴포넌트들을 확인
@@ -109,7 +143,7 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
             #### Visual Basic에서 제공하는 문서 프린터 출력 함수가 C#에는 미제공
             - 문서를 프린터에 출력 할 수 있도록 직접 렌더링하는 기능 구현
             - 문서 양식을 지정한 뷰를 생성하고, 이 양식을 뷰와 프린터 양측에 출력하도록 함
-            ## 🎸 [Tab-share](https://github.com/DYGames/tab-share)
+            ## [Tab-share](https://github.com/DYGames/tab-share)
             `React` `JS`
             ### 기타 악보를 웹에서 편집/재생 하는 서비스
             - .tab 악보 포맷 정의
@@ -129,14 +163,14 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
     </div>
     <div class="period-project">
         <md-block class="markdown-body">
-            ## 🧒 Doplex
+            ## Doplex
             `Unity` `C#` `Kinect`
             ### 유아용 인터렉티브 미니게임 서비스
             - 키즈카페, 박람회 등에서 빔 프로젝터로 투사된 영상에 볼풀 공을 던져 진행하는 게임
             - Kinect 센서 값을 이용해 볼 터치를 인식하고 이를 게임과 연결하여 게임 동작
             - 유아가 이용하기 적합한 게임 주제, 난이도, UI 등을 설정하고 여러 미니 게임을 제작
             - 전국 키즈카페에 실제 센서, 게임 설치 후 유지보수
-            ### 🛠️ Troubleshooting
+            ### Troubleshooting
             #### 게임 파일의 불법 복제에 대응 불가능
             - 설치 기기의 MAC 주소를 검증하여 실제 구매한 고객만 사용할 수 있도록 하는 인증 시스템 개발
             #### 전국의 게임이 설치되어 있는 곳에 업데이트를 제공
@@ -155,14 +189,14 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
     </div>
     <div class="period-project">
         <md-block class="markdown-body">
-            ## 🫐 [LotisBerry](https://github.com/DYGames/LotisBerry)
+            ## [LotisBerry](https://github.com/DYGames/LotisBerry)
             `Unity` `C#` `3D` `Post-Processing`
             ### 과일 나무를 지키는 3D 타워 디펜스 게임
             - Tile 구조로 맵 상에 타워를 배치
             - NavMesh를 이용해 적의 이동 경로, 타겟 우선순위 결정
             - Top-View, Quarter-View 시점 전환
             - 마우스 포인팅에 따른 플레이어 총구 겨냥 애니메이션 구현
-            ### 🛠️ Troubleshooting
+            ### Troubleshooting
             #### 시점 전환시 자연스러운 효과
             - Camera의 ProjectionMatrix를 가져와 행렬에 대한 선형 보간 수행
             - Coroutine을 이용해 보간 값을 Camera에 적용
@@ -183,7 +217,7 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
     </div>
     <div class="period-project">
         <md-block class="markdown-body">
-            ## 🖥️ [DirectX 2D Game Engine](https://github.com/DYGames/SkillOlympic_Medieval)
+            ## [DirectX 2D Game Engine](https://github.com/DYGames/SkillOlympic_Medieval)
             `C++` `2D` `DirectX`
             ### 대회에서 빠르게 게임을 제작 할 수 있도록 제작한 프레임워크
             - Cocos2d-x 엔진을 분석하여 필요한 컴포넌트를 특징하고 구조를 구상
@@ -204,14 +238,14 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
     </div>
     <div class="period-project">
         <md-block class="markdown-body">
-            ## 🍣 [Sushimasen](https://github.com/DYGames/Sushimasen)
+            ## [Sushimasen](https://github.com/DYGames/Sushimasen)
             `C++` `2D` `Cocos2d-X`
             ### 초밥 가게를 운영하는 타이쿤 게임
             - 조리, 서빙 두 가지 화면으로 구성
             - 조리 탭에선 손님이 주문한 요리를 조합법에 따라 제작
             - 요리를 많이 제작할수록 조합법이 해금되어 더 많은 수익 창출 가능
             - 빠른 시간 내에 손님에게 서빙하지 않으면 평판 하락
-            ### 🛠️ Troubleshooting
+            ### Troubleshooting
             #### 전역에서 관리되어야하는 시간, 금액 등의 데이터 관리
             - Singleton 패턴을 이용하여 필요한 곳에서 접근 가능하도록 구현
         </md-block>
