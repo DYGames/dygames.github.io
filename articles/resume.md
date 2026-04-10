@@ -28,7 +28,7 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
 이때 영상 페이징을 쉽게 해주는 <b>커스텀 뷰를 제작</b>하고, 오픈소스화하여 배포까지 하였습니다.
 <br>
 <br>
-현재는 ZETIC.ai에서 온디바이스 AI 추론 라이브러리를 개발하고 있습니다.
+ZETIC.ai에서 온디바이스 AI 추론 라이브러리를 개발하였고, 현재는 <b>당근</b>에서 Android 앱 개발을 하고 있습니다.
 <br>
 </div>
 
@@ -36,7 +36,31 @@ SW 개발병으로 복무하며 군 내에서 사용되는 프로그램을 재�
     <h1>경력</h1>
     <div class="period">
     <div class="period-key">
-    <h2>ZETIC.ai<br>(2024.06 ~ )</h2>
+    <h2>당근<br>(2026.01 ~ 2026.04)</h2>
+    <p>모바일 실 Android 팀 소속, 당근 앱의 Android 앱 및 SDK 개발</p>
+    <p>설정 화면 리뉴얼, Feature Flag SDK 내재화, 일본 서비스 UX 개선 등을 작업</p>
+    </div>
+    <div class="period-project">
+        <md-block class="markdown-body">
+            ## Unleash SDK 내재화
+            `Android` `Kotlin` `Feature Flag` `Multi-Module`
+            ### Feature Flag SDK Exposure 저하 문제 해결을 위한 SDK 직접 구현 및 내재화 (프로젝트 리드)
+            - 기존 오픈소스 SDK의 Exposure 측정 문제를 내재화 방식으로 근본 해결
+            - Repository / EventDispatcher 패턴 도입으로 구조 개선 및 결합도 감소
+            - Legacy SDK 데이터 자동 마이그레이션 구현
+            - 사용자 단위 On/Off 기능 추가
+            ## 설정 화면 리뉴얼
+            `Android` `Kotlin` `Jetpack Compose` `A/B Test`
+            ### Material 3 기반 디자인 시스템을 적용한 당근 앱 설정 화면 전면 개편
+            - TechSpec 작성 및 Phase 1 ~ Phase 2에 걸친 단계별 개발 주도
+            - 설정 목록, 사용자 관리, 동영상 자동 재생 설정 등 신규 화면 개발
+            ### 당근 디자인 시스템의 Radio 컴포넌트 구현
+        </md-block>
+    </div>
+    </div>
+    <div class="period">
+    <div class="period-key">
+    <h2>ZETIC.ai<br>(2024.06 ~ 2025.12)</h2>
     <p>온디바이스 AI 추론 솔루션 제공</p>
     <p>C++, Kotlin, Swift, CMake를 이용한 모바일 네이티브 라이브러리 아키텍쳐 설계,
 브릿징, 개발과 구성요소 빌드, 최적화</p>
