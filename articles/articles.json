@@ -1,65 +1,80 @@
 {
-    "data": [
-        {
-            "title": "양방향 의존성.md"
-        },
-        {
-            "title": "Kotlin에서 null을 [예외를 던지지 않고 null을.md",
-            "name": "Kotlin에서 null을? [예외를 던지지 않고 null을 반환하는 이유]"
-        },
-        {
-            "title": "좋은 테스트 코드란.md"
-        },
-        {
-            "title": "Gradle에서 SourceSet.md"
-        },
-        {
-            "title": "SQLiteOpenHelper.md"
-        },
-        {
-            "title": "오목 미션 회고 및 클래스 구조.md"
-        },
-        {
-            "title": "Kotlin Scope Functions.md"
-        },
-        {
-            "title": "JVM Type Erasure On Kotlin, Variance.md"
-        },
-        {
-            "title": "경곗값 위주의 테스트 케이스를 작성하는 이유.md"
-        },
-        {
-            "title": "Kotlin Functional Interface (SAM).md"
-        },
-        {
-            "title": "Kotlin Closure.md"
-        },
-        {
-            "title": "MockK을 이용한 Presenter 테스트.md"
-        },
-        {
-            "title": "CompletableFuture를 이용한 비동기 처리 전략.md"
-        },
-        {
-            "title": "Android에서 4방향 재활용 가능한 페이징 뷰 만들기 + Youtube WebView 재생.md"
-        },
-        {
-            "title": "Robolectric을 이용한 안드로이드 통합 테스트.md"
-        }
-    ]
+  "data": [
+    {
+      "title": "양방향 의존성.md",
+      "category": "설계·테스트",
+      "summary": "객체 사이의 의존 방향과 결합도에 대한 고민"
+    },
+    {
+      "title": "Kotlin에서 null을 [예외를 던지지 않고 null을.md",
+      "name": "Kotlin에서 null을? [예외를 던지지 않고 null을 반환하는 이유]",
+      "category": "Kotlin",
+      "summary": "예외 대신 null을 반환하는 설계의 의미"
+    },
+    {
+      "title": "좋은 테스트 코드란.md",
+      "category": "설계·테스트",
+      "summary": "좋은 테스트를 작성하기 위해 고려할 것들"
+    },
+    {
+      "title": "Gradle에서 SourceSet.md",
+      "category": "Android",
+      "summary": "Gradle SourceSet의 개념과 활용"
+    },
+    {
+      "title": "SQLiteOpenHelper.md",
+      "category": "Android",
+      "summary": "SQLiteOpenHelper를 활용한 데이터베이스 관리"
+    },
+    {
+      "title": "오목 미션 회고 및 클래스 구조.md",
+      "category": "설계·테스트",
+      "summary": "오목 구현을 돌아보며 정리한 클래스 설계"
+    },
+    {
+      "title": "Kotlin Scope Functions.md",
+      "category": "Kotlin",
+      "summary": "상황에 맞게 사용하는 코틀린 스코프 함수"
+    },
+    {
+      "title": "JVM Type Erasure On Kotlin, Variance.md",
+      "category": "Kotlin",
+      "summary": "JVM 타입 소거와 코틀린의 변성 이해하기"
+    },
+    {
+      "title": "경곗값 위주의 테스트 케이스를 작성하는 이유.md",
+      "category": "설계·테스트",
+      "summary": "경계에서 발견하는 오류와 테스트 케이스 설계"
+    },
+    {
+      "title": "Kotlin Functional Interface (SAM).md",
+      "category": "Kotlin",
+      "summary": "함수형 인터페이스와 SAM 변환"
+    },
+    {
+      "title": "Kotlin Closure.md",
+      "category": "Kotlin",
+      "summary": "람다가 외부 변수를 사용하는 방법"
+    },
+    {
+      "title": "MockK을 이용한 Presenter 테스트.md",
+      "category": "설계·테스트",
+      "summary": "MockK으로 Presenter의 동작 검증하기"
+    },
+    {
+      "title": "CompletableFuture를 이용한 비동기 처리 전략.md",
+      "category": "Kotlin",
+      "summary": "CompletableFuture를 활용한 비동기 작업 처리"
+    },
+    {
+      "title": "Android에서 4방향 재활용 가능한 페이징 뷰 만들기 + Youtube WebView 재생.md",
+      "category": "Android",
+      "summary": "4방향 페이징 뷰와 YouTube 영상 재생 구현기"
+    },
+    {
+      "title": "Robolectric을 이용한 안드로이드 통합 테스트.md",
+      "category": "설계·테스트",
+      "summary": "Robolectric을 활용한 Android 통합 테스트"
+    }
+  ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

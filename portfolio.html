@@ -1,54 +1,172 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="ko">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DYGames</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.min.css"
-        integrity="sha512-bm684OXnsiNuQSyrxuuwo4PHqr3OzxPpXyhT66DA/fhl73e1JmBxRKGnO/nRwWvOZxJLRCmNH7FII+Yn1JNPmg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="김도엽 · Android, 모바일 네이티브, 게임 개발">
+<title>Portfolio · DYGames</title>
+<link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
-    <script>hljs.highlightAll();</script>
-    <script src="js/article.js"></script>
 </head>
-
 <body>
-    <nav id="navbar-example2" class="navbar bg-light px-3 mb-3">
-        <div id="navbar-content">
-            <a class="navbar-brand" href="/index.html">DYGames</a>
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link" href="/resume.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Articles</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.instagram.com/exhibitapunk" target="_blank">Music</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div id="content-parent">
-        <div id="h2-parent">
-            <div id="h2">
-                <md-block class="markdown-body" src="articles/portfolio.md"></md-block>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/gh/hi098123/prism-for-tistory/prism.js"></script>
-</body>
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+<header class="site-header"><div class="header-inner"><a class="brand" href="about.html">DYGames</a><nav aria-label="주 메뉴"><a href="about.html">About</a><a href="portfolio.html" aria-current="page">Portfolio</a><a href="index.html">Articles</a></nav></div></header>
+<main id="main" class="container"><div class="page-intro"><h1>Portfolio</h1></div><div class="project-grid">
+<a class="project-card" href="#project-karrot-sdk"><h2>당근 · Feature Flag SDK</h2><p class="project-subtitle">Unleash SDK 내재화</p><p>Exposure 측정 문제에 대응한 SDK 내재화 프로젝트 리드. 기존 데이터 마이그레이션과 사용자별 On/Off 구현.</p><div class="tags"><span>Kotlin</span><span>SDK</span><span>Multi-Module</span></div><span class="project-link">상세 ↓</span></a>
+<a class="project-card" href="#project-karrot-settings"><h2>당근 · 설정 화면</h2><p class="project-subtitle">Jetpack Compose 기반 설정 화면 개편</p><p>TechSpec 작성과 단계별 개발 주도. 설정 화면과 Material 3 기반 디자인 시스템 컴포넌트 구현.</p><div class="tags"><span>Kotlin</span><span>Jetpack Compose</span><span>Material 3</span></div><span class="project-link">상세 ↓</span></a>
+<a class="project-card" href="#project-zetic-mlange"><h2>ZETIC.MLange</h2><p class="project-subtitle">온디바이스 AI 추론 라이브러리</p><p>JNI·Swift 인터페이스와 빌드 구조 설계. 언어 간 객체 수명 관리, AWS Device Farm 기반 추론 성능 측정.</p><div class="tags"><span>Android</span><span>iOS</span><span>C++</span><span>JNI</span></div><span class="project-link">상세 ↓</span></a><a class="project-card" href="#project-diggin-room"><h2>Diggin’ Room</h2><p class="project-subtitle">음악 추천 숏폼 서비스</p><p>앱 기획·Android 구조 설계와 YouTube 플레이어 구현. 백엔드 추천 로직 분리 PR 작성. 서비스 사용자 약 60명.</p><div class="tags"><span>Kotlin</span><span>MVVM</span><span>YouTube API</span></div><span class="project-link">상세 ↓</span></a><a class="project-card" href="#project-roompager"><h2>RoomPager</h2><p class="project-subtitle">Android 4방향 리사이클링 페이저</p><p>커스텀 뷰 개발 및 Maven 배포. 재사용 뷰를 9개에서 3개로 줄여 로딩 부하 감소.</p><div class="tags"><span>Kotlin</span><span>Custom View</span><span>Open Source</span></div><span class="project-link">상세 ↓</span></a><a class="project-card" href="#project-tab-share"><h2>Tab-share</h2><p class="project-subtitle">웹 기타 악보 편집기</p><p>악보 파일 포맷 정의. Canvas 기반 편집과 SoundFont 기반 재생 구현.</p><div class="tags"><span>React</span><span>JavaScript</span><span>Canvas</span></div><span class="project-link">상세 ↓</span></a><a class="project-card" href="#project-doplex"><h2>Doplex</h2><p class="project-subtitle">Kinect 기반 어린이용 미니게임</p><p>볼 터치 인식, 게임 로직, 기기 인증과 자동 업데이트 구현. 현장 설치 및 유지보수.</p><div class="tags"><span>Unity</span><span>C#</span><span>Kinect</span></div><span class="project-link">상세 ↓</span></a><a class="project-card" href="#project-directx-engine"><h2>DirectX 2D Game Engine</h2><p class="project-subtitle">DirectX 9 기반 2D 게임 엔진</p><p>대회용 C++ 프레임워크 제작. 오브젝트 계층·렌더링·입력·충돌 구현 후 게임 제작에 사용.</p><div class="tags"><span>C++</span><span>DirectX</span><span>2D</span></div><span class="project-link">상세 ↓</span></a></div><section id="project-details" class="portfolio-details"><h2>프로젝트 상세</h2>
+<div class="project-details-list">
+<section id="project-karrot-sdk" class="project-detail" aria-labelledby="heading-karrot-sdk" tabindex="-1"><header class="project-detail-heading"><h3 id="heading-karrot-sdk">당근 · Feature Flag SDK</h3><p>당근 · 2026.01 — 2026.04 · Unleash SDK 내재화</p></header><div class="project-detail-body"><dl class="project-facts">
+<div><dt>배경·역할</dt><dd>당근 모바일실 Android 팀에서 기존 오픈소스 SDK의 Exposure 측정 문제에 대응하는 내재화 프로젝트를 리드했습니다. Feature Flag SDK를 직접 구현했습니다.</dd></div>
+<div><dt>구조</dt><dd>Repository와 EventDispatcher 패턴을 도입해 데이터 처리와 이벤트 전달의 책임을 나눴습니다. SDK 구성요소 간 결합도를 줄이는 방향으로 구조를 정리했습니다.</dd></div>
+<div><dt>전환 처리</dt><dd>기존 SDK가 저장한 데이터를 새 SDK로 자동 마이그레이션하도록 구현했습니다. 사용자 단위로 기능을 켜거나 끌 수 있는 제어 기능도 추가했습니다.</dd></div>
+</dl></div></section>
+<section id="project-karrot-settings" class="project-detail" aria-labelledby="heading-karrot-settings" tabindex="-1"><header class="project-detail-heading"><h3 id="heading-karrot-settings">당근 · 설정 화면</h3><p>당근 · 2026.01 — 2026.04 · Jetpack Compose 기반 설정 화면 개편</p></header><div class="project-detail-body"><dl class="project-facts">
+<div><dt>역할</dt><dd>당근 Android 앱 설정 화면 개편의 TechSpec을 작성하고 Phase 1·2에 걸친 개발을 주도했습니다.</dd></div>
+<div><dt>화면 구현</dt><dd>Material 3 기반 디자인 시스템을 적용해 설정 목록, 사용자 관리, 동영상 자동 재생 설정 등 신규 화면을 개발했습니다.</dd></div>
+<div><dt>컴포넌트</dt><dd>당근 디자인 시스템의 Radio 컴포넌트를 구현하고, 앱 설정에 필요한 선택 UI를 구성했습니다.</dd></div>
+</dl></div></section>
 
+<section id="project-zetic-mlange" class="project-detail" aria-labelledby="heading-zetic-mlange" tabindex="-1">
+<header class="project-detail-heading"><h3 id="heading-zetic-mlange">ZETIC.MLange</h3><p>ZETIC.ai · 2024.06 — 2025.12 · 온디바이스 AI 추론 라이브러리</p></header>
+<div class="project-detail-body">
+<div class="detail-links"><a href="https://zetic.ai/mlange">서비스 ↗</a></div>
+<dl class="project-facts">
+<div><dt>담당 범위</dt><dd>ZETIC.ai에서 Android·iOS용 온디바이스 AI 추론 라이브러리, 기기 벤치마킹 시스템과 데모 앱을 개발했습니다. C++ 코어와 Kotlin·Swift 인터페이스, 빌드 구조를 함께 다뤘습니다.</dd></div>
+<div><dt>라이브러리</dt><dd>ONNX Runtime·Qualcomm QNN·TFLite SDK를 이용한 추론 기능을 구현했습니다. Android Studio·Xcode에서 사용할 수 있도록 Gradle·CMake 기반 빌드 구조를 설계했습니다.</dd></div>
+<div><dt>메모리 관리</dt><dd>Java의 GC와 네이티브 객체의 수명이 다른 환경에서 JNI·Swift 인터페이스를 개발했습니다. 비동기 호출을 포함한 언어 간 객체 생명주기를 맞추고, 래핑 과정의 메모리 사용과 누수를 관리했습니다.</dd></div>
+<div><dt>벤치마킹</dt><dd>기기별 모델 런타임 선택에 사용할 측정 시스템을 만들었습니다. Python·boto3로 AWS Device Farm 테스트 패키지를 생성·배포하고, Android·iOS에서 추론 시간과 SNR을 측정했습니다. 결과는 기기·런타임·칩 종류별 보고서로 정리했습니다.</dd></div>
+<div><dt>앱 배포</dt><dd>YOLOv8·YAMNet·Face Detection·Whisper·LLaMA 모델용 전후처리를 구현했습니다. Tokenizer·Mel-spectrogram·NMS와 Camera2·오디오 입력을 연결한 데모 앱을 Play Store·App Store에 배포했습니다.</dd></div>
+</dl>
+</div></section>
+
+<section id="project-diggin-room" class="project-detail" aria-labelledby="heading-diggin-room" tabindex="-1">
+<header class="project-detail-heading"><h3 id="heading-diggin-room">Diggin’ Room</h3><p>음악 추천 숏폼 서비스</p></header>
+<div class="project-detail-body">
+<div class="detail-links"><a href="https://github.com/woowacourse-teams/2023-diggin-room">GitHub ↗</a><a href="https://play.google.com/store/apps/details?id=com.digginroom.digginroom">Play Store ↗</a></div>
+<dl class="project-facts">
+<div><dt>서비스·역할</dt><dd>사용자의 탐색 행동을 바탕으로 음악을 추천하는 숏폼 서비스입니다. 초기 아이디어와 앱 흐름을 기획하고, Android 아키텍처·가중치 기반 추천 알고리즘·영상 플레이어를 구현했습니다. 팀 서비스 사용자 약 60명을 확보했습니다.</dd></div>
+<div><dt>영상 재생</dt><dd>처음에는 HLS 직접 스트리밍을 검토했지만, YouTube 음악 데이터를 활용하고 개발 기간을 줄이기 위해 WebView와 IFrame API를 선택했습니다. JavaScript로 로딩·재생·일시정지를 제어하고, 상태를 Kotlin에 전달하도록 인터페이스를 연결했습니다.</dd></div>
+<div><dt>페이징</dt><dd>세로 스와이프로 탐색하고 가로 스와이프로 선호하지 않는 음악을 넘기는 동작을 구현했습니다. RoomPager의 페이징 상태에 따라 화면 밖 플레이어를 미리 로딩하고 현재 영상의 재생을 제어했습니다.</dd></div>
+<div><dt>의존성 관리</dt><dd>객체 수가 늘어나며 수동 의존 관계 관리가 복잡해졌습니다. Reflection으로 생성자를 탐색해 객체를 주입하는 기능을 만들고, Singleton·Qualifier·Lifecycle 어노테이션과 초기 관계를 표현하는 Kotlin DSL을 지원했습니다.</dd></div>
+<div><dt>추천 로직 분리</dt><dd>Spring Service에 들어 있던 추천 알고리즘을 도메인 계층으로 옮겼습니다. Repository를 참조하는 RoomRecommender를 구현하고 <a href="https://github.com/woowacourse-teams/2023-diggin-room/pull/380">백엔드 수정 PR</a>을 작성했습니다. 팀과 구현 내용을 논의한 뒤 반영했습니다.</dd></div>
+<div><dt>실행 결과 확인</dt><dd>네트워크 요청과 도메인 로직의 성공·실패를 확인하기 위해 Kotlin Result를 활용한 LogResult를 구현했습니다. 설정한 채널에 따라 콘솔이나 Firebase로 결과를 기록하도록 했습니다.</dd></div>
+</dl>
+<details class="project-attachments">
+<summary>사진·영상</summary>
+<div class="project-attachments-content">
+<section class="project-media"><h4>앱 시연</h4><div class="project-videos">
+<figure class="video-card"><video controls preload="none" playsinline aria-label="음악 탐색 시연" poster="articles/images/portfolio/explorer-poster.jpg" width="316" height="692"><source src="articles/images/portfolio/explorer.mov" type="video/mp4"></video><figcaption><strong>음악 탐색</strong><span>상하좌우 스와이프로 음악 탐색</span></figcaption></figure>
+<figure class="video-card"><video controls preload="none" playsinline aria-label="음악 스크랩 시연" poster="articles/images/portfolio/scrap-poster.jpg" width="316" height="692"><source src="articles/images/portfolio/scrap.mov" type="video/mp4"></video><figcaption><strong>음악 스크랩</strong><span>마음에 드는 음악 저장</span></figcaption></figure>
+<figure class="video-card"><video controls preload="none" playsinline aria-label="댓글 시연" poster="articles/images/portfolio/comment-poster.jpg" width="316" height="692"><source src="articles/images/portfolio/comment.mov" type="video/mp4"></video><figcaption><strong>댓글</strong><span>음악에 대한 댓글 확인·작성</span></figcaption></figure>
+</div></section>
+<section class="project-media"><h4>구현 자료</h4><div class="project-media-content">
+<figure class="image-card"><a class="media-image" href="articles/images/portfolio/roomplayer.png" target="_blank" rel="noopener" aria-label="영상 플레이어 인터페이스 원본 보기 (새 탭)"><img src="articles/images/portfolio/roomplayer.png" alt="영상 플레이어 인터페이스" loading="lazy" width="720" height="376"></a><figcaption><strong>영상 플레이어 인터페이스</strong><span>재생·일시정지·영상 전환을 공통 인터페이스로 정의</span></figcaption></figure>
+<figure class="image-card"><a class="media-image" href="articles/images/portfolio/jscallback.png" target="_blank" rel="noopener" aria-label="WebView 상태 전달 원본 보기 (새 탭)"><img src="articles/images/portfolio/jscallback.png" alt="JavaScript와 Kotlin 간 상태 전달" loading="lazy" width="720" height="267"></a><figcaption><strong>WebView 상태 전달</strong><span>JavaScript의 플레이어 상태를 Kotlin에서 처리</span></figcaption></figure>
+<figure class="image-card"><a class="media-image" href="articles/images/portfolio/manualdi.png" target="_blank" rel="noopener" aria-label="기존 의존성 관리 원본 보기 (새 탭)"><img src="articles/images/portfolio/manualdi.png" alt="기존 수동 의존성 주입 구조" loading="lazy" width="720" height="257"></a><figcaption><strong>기존 의존성 관리</strong><span>Provider에서 객체를 직접 생성하고 연결하는 구조</span></figcaption></figure>
+<figure class="image-card"><a class="media-image" href="articles/images/portfolio/didsl.png" target="_blank" rel="noopener" aria-label="Kotlin DSL 적용 원본 보기 (새 탭)"><img src="articles/images/portfolio/didsl.png" alt="Kotlin DSL을 이용한 의존 관계 정의" loading="lazy" width="720" height="287"></a><figcaption><strong>Kotlin DSL 적용</strong><span>객체 의존 관계를 DSL로 정의</span></figcaption></figure>
+<figure class="image-card"><a class="media-image" href="articles/images/portfolio/ioc.png" target="_blank" rel="noopener" aria-label="추천 로직 분리 원본 보기 (새 탭)"><img src="articles/images/portfolio/ioc.png" alt="추천 알고리즘의 의존성 분리" loading="lazy" width="720" height="402"></a><figcaption><strong>추천 로직 분리</strong><span>Repository를 참조하는 도메인 서비스로 추천 로직 분리</span></figcaption></figure>
+</div></section>
+</div>
+</details>
+</div></section>
+<section id="project-roompager" class="project-detail" aria-labelledby="heading-roompager" tabindex="-1">
+<header class="project-detail-heading"><h3 id="heading-roompager">RoomPager</h3><p>Android 4방향 리사이클링 페이저</p></header>
+<div class="project-detail-body">
+<div class="detail-links"><a href="https://github.com/DYGames/RoomPager">GitHub ↗</a><a href="article.html?article=Android%EC%97%90%EC%84%9C%204%EB%B0%A9%ED%96%A5%20%EC%9E%AC%ED%99%9C%EC%9A%A9%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%ED%8E%98%EC%9D%B4%EC%A7%95%20%EB%B7%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20%2B%20Youtube%20WebView%20%EC%9E%AC%EC%83%9D.md">개발기 ↗</a></div>
+<dl class="project-facts">
+<div><dt>요구사항</dt><dd>Diggin’ Room에서 세로 방향의 영상 탐색과 가로 방향의 싫어요 동작을 함께 지원해야 했습니다. 양 축으로 이전·다음 영상을 일관되게 보여주면서 플레이어를 재사용하는 커스텀 뷰를 개발했습니다.</dd></div>
+<div><dt>입력·상태</dt><dd>스크롤 임계값에 따라 이전·현재·다음 상태를 결정했습니다. 터치가 끝나면 콘텐츠 인덱스와 재사용 위치를 갱신하고, 현재 플레이어로 스크롤해 재생하도록 했습니다. 뷰 재배치로 생기는 스크롤 위치 오차도 보정했습니다.</dd></div>
+<div><dt>공통 인터페이스</dt><dd>ScrollView와 HorizontalScrollView를 같은 방식으로 제어하기 위해 ScrollPager 인터페이스를 만들었습니다. 방향별 스크롤·위치 계산을 각 구현체에 두고, RoomPager에서는 공통 인터페이스를 통해 호출했습니다.</dd></div>
+<div><dt>로딩 축소</dt><dd>초기에는 3×3 배치의 플레이어 9개를 로딩해 네트워크 요청과 뷰 작업이 많았습니다. 페이징 방향에 따라 뷰를 재배치하는 방식으로 바꿔 동시에 로딩하는 뷰를 3개로 줄였습니다.</dd></div>
+<div><dt>라이브러리화</dt><dd>RecyclerView와 유사한 Adapter·ViewHolder 사용 방식을 제공했습니다. Diggin’ Room에 적용한 뒤 오픈소스 라이브러리로 분리하고 Maven에 배포했습니다.</dd></div>
+</dl>
+<details class="project-attachments">
+<summary>사진·영상</summary>
+<div class="project-attachments-content">
+<section class="project-media"><h4>구현 자료</h4><div class="project-media-content">
+<figure class="image-card"><a class="media-image" href="articles/images/portfolio/scrollpager.png" target="_blank" rel="noopener" aria-label="ScrollPager 인터페이스 원본 보기 (새 탭)"><img src="articles/images/portfolio/scrollpager.png" alt="ScrollPager 인터페이스와 구현 클래스" loading="lazy" width="720" height="871"></a><figcaption><strong>ScrollPager 인터페이스</strong><span>가로·세로 스크롤의 상태와 동작을 공통 인터페이스로 정의</span></figcaption></figure>
+</div></section>
+</div>
+</details>
+</div></section>
+<section id="project-army-personnel" class="project-detail" aria-labelledby="heading-army-personnel" tabindex="-1">
+<header class="project-detail-heading"><h3 id="heading-army-personnel">장군인사관리체계</h3><p>레거시 프로그램 재개발</p></header>
+<div class="project-detail-body">
+<dl class="project-facts">
+<div><dt>배경·역할</dt><dd>육군본부 SW 개발병으로 근무하며 장군인사관리체계 재개발을 담당했습니다. 기존 Visual Basic 프로그램의 호환성 문제에 대응하기 위해 C# WinForms로 옮겼습니다.</dd></div>
+<div><dt>기존 기능 유지</dt><dd>문서와 인수자가 없는 환경에서 Visual Basic 코드와 화면 동작을 분석했습니다. 기존 업무 로직과 화면을 유지하면서 Oracle DB·Excel 연동을 다시 구현하고, 실시간 투표를 위해 DB 폴링을 적용했습니다.</dd></div>
+<div><dt>문서 출력</dt><dd>기존 언어에서 제공하던 인쇄 기능을 대체해야 했습니다. 문서 양식을 뷰로 정의하고 화면과 프린터 양쪽에 렌더링하는 기능을 구현했습니다.</dd></div>
+</dl>
+</div></section>
+<section id="project-tab-share" class="project-detail" aria-labelledby="heading-tab-share" tabindex="-1">
+<header class="project-detail-heading"><h3 id="heading-tab-share">Tab-share</h3><p>웹 기타 악보 편집기</p></header>
+<div class="project-detail-body">
+<div class="detail-links"><a href="https://github.com/DYGames/tab-share">GitHub ↗</a></div>
+<dl class="project-facts">
+<div><dt>목적</dt><dd>기타 악보를 웹에서 편집하고 재생하는 서비스를 개발했습니다. 악보를 저장하는 데이터 형식과 화면에 표시하는 방식, 음원 재생을 직접 연결했습니다.</dd></div>
+<div><dt>데이터·편집</dt><dd>음표·쉼표·박자·음·프렛·줄 정보를 표현하는 .tab 포맷을 정의했습니다. HTML Canvas로 해당 데이터를 악보로 표시하고 수정할 수 있도록 구현했습니다.</dd></div>
+<div><dt>재생</dt><dd>SoundFont를 사용해 악보를 여러 음색으로 재생할 수 있도록 했습니다. React로 웹 UI를 구성했습니다.</dd></div>
+</dl>
+<details class="project-attachments">
+<summary>사진·영상</summary>
+<div class="project-attachments-content">
+<section class="project-media"><h4>구현 자료 · 시연</h4><div class="project-media-content">
+<figure class="embed-card"><iframe src="https://www.youtube.com/embed/cOPHI_Lp0rA" title="Tab-share 시연" loading="lazy" allowfullscreen></iframe><figcaption><strong>Tab-share 시연</strong><span>악보 편집과 재생</span></figcaption></figure>
+</div></section>
+</div>
+</details>
+</div></section>
+<section id="project-doplex" class="project-detail" aria-labelledby="heading-doplex" tabindex="-1">
+<header class="project-detail-heading"><h3 id="heading-doplex">Doplex</h3><p>Kinect 기반 어린이용 미니게임</p></header>
+<div class="project-detail-body">
+<dl class="project-facts">
+<div><dt>현장·역할</dt><dd>아몽 소프트웨어 인턴으로 키즈카페·박람회에 설치되는 어린이용 게임을 개발했습니다. 투사된 영상에 볼풀 공을 던지는 방식으로, Kinect 센서 값을 게임 입력에 연결했습니다.</dd></div>
+<div><dt>게임 개발</dt><dd>어린이 사용자를 고려해 게임 주제·난이도·UI를 구성하고 Unity로 여러 미니게임을 제작했습니다. 전국 키즈카페의 센서·게임 설치와 유지보수도 수행했습니다.</dd></div>
+<div><dt>배포·운영</dt><dd>게임 파일 복제에 대응하기 위해 설치 기기의 MAC 주소를 확인하는 인증 기능을 만들었습니다. 여러 설치 장소에 업데이트를 제공할 수 있도록 실행 시 버전을 확인하고 자동으로 패치하는 기능을 구현했습니다.</dd></div>
+</dl>
+</div></section>
+<section id="project-lotisberry" class="project-detail" aria-labelledby="heading-lotisberry" tabindex="-1">
+<header class="project-detail-heading"><h3 id="heading-lotisberry">LotisBerry</h3><p>3D 타워 디펜스 게임</p></header>
+<div class="project-detail-body">
+<div class="detail-links"><a href="https://github.com/DYGames/LotisBerry">GitHub ↗</a></div>
+<dl class="project-facts">
+<div><dt>역할·결과</dt><dd>과일나무를 지키는 3D 타워 디펜스 게임입니다. 팀장으로 초기 기획과 프로그래밍을 주도했고, UI·게임 규칙·타일링·타워 설치·플레이어 이동·시점 전환을 구현했습니다. 2017년 우송대학교 KWC 은상을 수상했습니다.</dd></div>
+<div><dt>게임 로직</dt><dd>타일 구조에 따라 타워를 배치하고, NavMesh로 적의 이동 경로와 타겟 우선순위를 결정했습니다. 마우스 방향에 따라 플레이어의 총구가 회전하도록 구현했습니다.</dd></div>
+<div><dt>카메라·진행</dt><dd>탑뷰와 쿼터뷰 사이 전환을 위해 카메라 ProjectionMatrix를 보간하고 Coroutine으로 적용했습니다. 웨이브 진행도 Coroutine으로 관리했습니다.</dd></div>
+<div><dt>공격 동작 수정</dt><dd>NavMeshAgent가 타워에 도착해도 멈추거나 공격하지 않는 문제를 수정했습니다. 정지 거리를 설정하고 일정 거리 안에 들어오면 이동을 멈추도록 처리했습니다.</dd></div>
+</dl>
+<details class="project-attachments">
+<summary>사진·영상</summary>
+<div class="project-attachments-content">
+<section class="project-media"><h4>구현 자료 · 시연</h4><div class="project-media-content">
+<figure class="embed-card"><iframe src="https://www.youtube.com/embed/feGyPshVzlU" title="LotisBerry 시연" loading="lazy" allowfullscreen></iframe><figcaption><strong>LotisBerry 시연</strong><span>타워 배치와 전투</span></figcaption></figure>
+</div></section>
+</div>
+</details>
+</div></section>
+<section id="project-directx-engine" class="project-detail" aria-labelledby="heading-directx-engine" tabindex="-1">
+<header class="project-detail-heading"><h3 id="heading-directx-engine">DirectX 2D Game Engine</h3><p>DirectX 9 기반 게임 엔진</p></header>
+<div class="project-detail-body">
+<div class="detail-links"><a href="https://github.com/DYGames/SkillOlympic_Medieval">GitHub ↗</a></div>
+<dl class="project-facts">
+<div><dt>제작 목적</dt><dd>전국기능경기대회에서 주어진 기획에 맞는 게임을 빠르게 구현하기 위해 만든 C++·DirectX 9 프레임워크입니다. Cocos2d-x 엔진 구조를 분석해 필요한 구성요소를 정리했습니다.</dd></div>
+<div><dt>오브젝트 구조</dt><dd>게임 오브젝트를 트리로 관리하고 부모의 Transform이 자식에게 적용되도록 행렬을 합성했습니다. Scene 단위의 화면 전환과 오브젝트 구성을 지원했습니다.</dd></div>
+<div><dt>엔진 기능</dt><dd>2D Sprite 렌더링·애니메이션·입력·물리·충돌 처리를 구현했습니다. 이 프레임워크로 게임을 제작해 2016년 전국기능경기대회 게임개발직종에서 입상했습니다.</dd></div>
+</dl>
+</div></section>
+<section id="project-sushimasen" class="project-detail" aria-labelledby="heading-sushimasen" tabindex="-1">
+<header class="project-detail-heading"><h3 id="heading-sushimasen">Sushimasen</h3><p>초밥 가게 운영 게임</p></header>
+<div class="project-detail-body">
+<div class="detail-links"><a href="https://github.com/DYGames/Sushimasen">GitHub ↗</a></div>
+<dl class="project-facts">
+<div><dt>역할·결과</dt><dd>C++·Cocos2d-x 기반 초밥 가게 운영 게임입니다. 팀장·리드 프로그래머로 게임 전반의 기능을 관리하고 구현했습니다. 2015년 교내 게임제작대회 금상을 수상했습니다.</dd></div>
+<div><dt>게임 규칙</dt><dd>조리와 서빙 화면을 나눴습니다. 조합법에 따라 주문한 요리를 만들고, 제작 횟수에 따라 새로운 조합법을 해금했습니다. 서빙이 늦어지면 평판이 낮아지는 규칙을 구현했습니다.</dd></div>
+<div><dt>상태 관리</dt><dd>여러 화면에서 사용하는 시간·금액 등의 데이터를 Singleton으로 관리했습니다.</dd></div>
+</dl>
+</div></section>
+<a class="project-source" href="articles/portfolio.md">개발 기록 원문 ↗</a></div>
+</section></main>
+<footer class="site-footer container"><span>김도엽 · DYGames</span><div><a href="https://github.com/DYGames">GitHub ↗</a><a href="mailto:dygames34@gmail.com">Email ↗</a></div></footer>
+</body>
 </html>
